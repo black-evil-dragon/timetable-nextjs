@@ -1,0 +1,23 @@
+@import './colors';
+@import './variables';
+@import './font';
+@import './mixins';
+@import './ui';
+@import './pages';
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    font-size: 20px;
+}
+
+#__next, .app, .app__content {
+    height: 100%;
+}

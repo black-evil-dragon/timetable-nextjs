@@ -1,0 +1,43 @@
+.find-school {
+    @include flex-center;
+    text-align: center;
+
+    height: 100%;
+
+    &__title {
+        h3 {
+            margin: .5rem 0;
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            font-size: .75rem;
+        }
+    }
+
+    &__input {
+        @include flex-center;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+            outline: none;
+            border: solid .05rem $grey;
+
+            border-radius: .4rem;
+
+            padding: .35rem .5rem;
+            margin-top: .5rem;
+        }
+    }
+
+    &__button {
+        width: 100%;
+
+        margin: .5rem 0;
+
+        button {
+            width: 100%;
+        }
+    }
+}

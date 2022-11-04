@@ -1,0 +1,18 @@
+button {
+    border-radius: .65rem;
+    transition: all .35s;
+
+    color: $white;
+    border: solid .1rem $navy-dark;
+    background-color: $navy-dark;
+
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
+
+    &.submit {
+        padding: .5rem .1rem;
+    }
+
+}

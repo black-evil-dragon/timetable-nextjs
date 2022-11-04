@@ -1,14 +1,7 @@
 import React from 'react'
 import useInput from '../../../hooks/useInput'
+import { InputProps } from '../../../types'
 
-type InputProps = {
-    type: string,
-
-    value?: string,
-    placeholder?: string,
-    onChange?: any,
-    readonly?: boolean,
-}
 const Input: React.FunctionComponent<InputProps> = ({ type, placeholder, value, onChange, readonly }) => {
     return (
         readonly ?
