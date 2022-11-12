@@ -21,28 +21,28 @@ button.submit {
   padding: 0.5rem 0.1rem;
 }
 
-.find-school {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100%;
 }
-.find-school__title h3 {
+.form__title h3 {
   margin: 0.5rem 0;
   text-align: center;
 }
-.find-school__title p {
+.form__title p {
   margin: 0;
   font-size: 0.75rem;
 }
-.find-school__input {
+.form__input {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.find-school__input input {
+.form__input input {
   width: 100%;
   outline: none;
   border: solid 0.05rem rgb(160, 160, 160);
@@ -50,11 +50,11 @@ button.submit {
   padding: 0.35rem 0.5rem;
   margin-top: 0.5rem;
 }
-.find-school__button {
+.form__button {
   width: 100%;
   margin: 0.5rem 0;
 }
-.find-school__button button {
+.form__button button {
   width: 100%;
 }
 
@@ -64,7 +64,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  scrollbar-width: thin;
   font-size: 20px;
 }
 
