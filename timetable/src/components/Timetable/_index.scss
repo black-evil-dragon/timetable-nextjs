@@ -1,0 +1,36 @@
+.timetable {
+    @include flex-center;
+    flex-direction: column;
+
+    background: $navy-dark;
+    color: $white;
+
+    &__title {
+        padding: 1rem 0 0;
+        span {
+            margin: 0 1rem;
+        }
+    }
+
+    .week {
+        color: $black;
+        background-color: $white;
+        border-radius: .55rem;
+
+        margin: 1rem;
+        padding: 1rem;
+
+
+        &__title {
+            text-align: center;
+        }
+
+        .lesson {
+            margin: 1rem;
+
+            &__room {
+                color: $grey;
+            }
+        }
+    }
+}

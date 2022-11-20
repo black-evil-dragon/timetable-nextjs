@@ -58,6 +58,37 @@ button.submit {
   width: 100%;
 }
 
+.timetable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #020e1b;
+  color: #fff;
+}
+.timetable__title {
+  padding: 1rem 0 0;
+}
+.timetable__title span {
+  margin: 0 1rem;
+}
+.timetable .week {
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.55rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.timetable .week__title {
+  text-align: center;
+}
+.timetable .week .lesson {
+  margin: 1rem;
+}
+.timetable .week .lesson__room {
+  color: rgb(160, 160, 160);
+}
+
 html,
 body {
   padding: 0;
@@ -70,4 +101,8 @@ body {
 
 #__next, .app, .app__content {
   height: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }

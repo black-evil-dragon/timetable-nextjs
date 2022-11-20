@@ -7,20 +7,26 @@ import { Week, Lesson, TimetableProps } from '../../types';
 const Timetable: React.FunctionComponent<TimetableProps> = ({ timetableData }) => {
     return (
         <div className="timetable">
-            {timetableData.schoolName}
-            {timetableData.gradeNumber}
+            <div className="timetable__title">
+                {timetableData.schoolName}
+                <span>{timetableData.gradeNumber}</span>
+            </div>
 
-            {timetableData.timetable.map((week: Week, index) => (
-                <div key={index}>
-                    <div>{week.weekName}</div>
-                    <div>{week.lessons.map((lesson: Lesson, index) => (
-                        <div key={index}>
-                            <div>{lesson.subjectName}</div>
-                            <div>{lesson.room}</div>
+            <div className="timetable__content">
+                {timetableData.timetable.map((week: Week, index) => (
+                    <div className='week' key={index}>
+                        <div className='week__title'>
+                            <h3>{week.weekName}</h3>
                         </div>
-                    ))}</div>
-                </div>
-            ))}
+                        <div className='week__content'>{week.lessons.map((lesson: Lesson, index) => (
+                            <div className='lesson' key={index}>
+                                <div className='lesson__name'>{lesson.subjectName}</div>
+                                <div className='lesson__room'>{lesson.room}</div>
+                            </div>
+                        ))}</div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

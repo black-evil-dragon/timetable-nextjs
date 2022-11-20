@@ -3,6 +3,7 @@
 @import './font';
 @import './mixins';
 @import './ui';
+@import './components';
 @import './pages';
 
 
@@ -20,4 +21,8 @@ body {
 
 #__next, .app, .app__content {
     height: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
